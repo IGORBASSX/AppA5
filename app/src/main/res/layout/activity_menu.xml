@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dao.MenuActivity">
+    tools:context=".dao.MenuActivity"
+    android:orientation="vertical"
+    android:gravity="center">
 
     <Button
-        android:id="@+id/btnCadastroProdutos"
+        android:id="@+id/btnProdutos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btnProdutos"
@@ -27,10 +28,10 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btnCadastroFornecedores"
+        android:id="@+id/btnFornecedores"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btnFuncionarios"
+        android:text="@string/btnFornecedores"
         tools:layout_editor_absoluteX="108dp"
         tools:layout_editor_absoluteY="307dp"
         android:onClick="acessarCadastroFornecedor"
@@ -44,6 +45,7 @@
         tools:layout_editor_absoluteX="112dp"
         tools:layout_editor_absoluteY="438dp"
         tools:ignore="MissingConstraints"
-        android:onClick="sairDoMenu"/>
+        android:onClick="sairDoMenu"
+        android:layout_marginTop="40dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

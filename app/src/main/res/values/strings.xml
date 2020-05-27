@@ -8,4 +8,6 @@
     <string name="btnProdutos">PRODUTOS</string>
     <string name="btnFuncionarios">FUNCIONARIOS</string>
     <string name="btnFornecedores">FORNECEDORES</string>
+    <string name="btnListarProd">LISTAR PRODUTOS</string>
+    <string name="btnCadastrarProd">CADASTRAR PRODUTOS</string>
 </resources>

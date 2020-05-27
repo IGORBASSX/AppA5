@@ -5,23 +5,30 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import com.example.appa5.R;
 
 public class MenuActivity extends AppCompatActivity {
 
-    //private Button btnCadastroFuncionarios, btnCadastroProdutos, btnCadastroFornecedores, btnSair;
+    private Button btnProdutos, btnFuncionarios, btnFornecedores, btnSair;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-    }
+        btnProdutos = findViewById(R.id.btnProdutos);
+        btnFuncionarios = findViewById(R.id.btnFuncionarios);
+        btnFornecedores = findViewById(R.id.btnFornecedores);
 
-    public void acessarCadastroProdutos(View view) {
-        Intent intent = new Intent(this, ListaProdutosActivity.class);
-        startActivity(intent);
+        btnProdutos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent irParaMenuProdutos = new Intent(MenuActivity.this, MenuProdutosActivity.class);
+                startActivity(irParaMenuProdutos);
+            }
+        });
 
     }
 

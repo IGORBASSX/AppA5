@@ -31,6 +31,8 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Comportamento do botão Login
+                Intent menu = new Intent(LoginActivity.this, MenuActivity.class);
+                startActivity(menu);
             }
 
         });
