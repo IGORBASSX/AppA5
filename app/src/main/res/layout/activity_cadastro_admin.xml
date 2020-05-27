@@ -1,40 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".ativity.CadastroAdmin"
     android:gravity="center"
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/etLogin"
+        android:id="@+id/etLoginCad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="@string/hintLogin"
-        android:inputType="text" />
+        android:hint="@string/hintLogin"/>
 
     <EditText
-        android:id="@+id/etSenha"
+        android:id="@+id/etSenhaCad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hintSenha"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:hint="@string/hintSenha" />
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnCadastrarCad"
         android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:onClick="Logar"
-        android:text="@string/btnLogin" />
-
-    <Button
-        android:id="@+id/btnCadastrar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:onClick="Cadastrar"
         android:text="@string/btnCadastrar" />
 
+    <Button
+        android:id="@+id/btnSairCadAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSair" />
 </LinearLayout>

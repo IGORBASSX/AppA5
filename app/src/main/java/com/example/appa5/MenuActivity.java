@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.appa5.ativity.CadastroFornecedorActivity;
+import com.example.appa5.ativity.CadastroFuncionarioActivity;
+
 public class MenuActivity extends AppCompatActivity {
     //private Button btnCadastroFuncionarios, btnCadastroProdutos, btnCadastroFornecedores, btnSair;
 
@@ -23,12 +26,12 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void acessarCadastroFuncionario(View view) {
-        Intent intent = new Intent(this, ListaProdutosActivity.class);
+        Intent intent = new Intent(this, CadastroFuncionarioActivity.class);
         startActivity(intent);
 
     }
     public void acessarCadastroFornecedor(View view) {
-        Intent intent = new Intent(this, ListaProdutosActivity.class);
+        Intent intent = new Intent(this, CadastroFornecedorActivity.class);
         startActivity(intent);
 
     }

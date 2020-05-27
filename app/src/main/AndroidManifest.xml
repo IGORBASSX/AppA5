@@ -9,9 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListaProdutosActivity"></activity>
-        <activity android:name=".MenuActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".ativity.MenuFornecedorActivity"></activity>
+        <activity android:name=".ListaFuncionarioActivity" />
+        <activity android:name=".ListaFornecedorActivity" />
+        <activity android:name=".MenuFornecedores" />
+        <activity android:name=".ativity.MenuFuncionariosActivity" />
+        <activity android:name=".ativity.CadastroFornecedorActivity" />
+        <activity android:name=".ativity.CadastroFuncionarioActivity" />
+        <activity android:name=".ativity.CadastroProdutoActivity" />
+        <activity android:name=".ativity.MenuProdutosActivity" />
+        <activity android:name=".ativity.CadastroAdmin" />
+        <activity android:name=".ativity.ListaProdutosActivity" />
+        <activity android:name=".ativity.MenuActivity" />
+        <activity android:name=".ativity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

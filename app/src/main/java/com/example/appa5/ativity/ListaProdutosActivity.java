@@ -1,23 +1,16 @@
-package com.example.appa5;
+package com.example.appa5.ativity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.ListView;
 
-import java.util.ArrayList;
+import com.example.appa5.R;
 
 public class ListaProdutosActivity extends AppCompatActivity {
-
-    private ListView lvProdutos;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_produtos);
-
-
-
     }
 }

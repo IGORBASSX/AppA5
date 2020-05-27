@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">AppA5</string>
+    <string name="btnLogin">LOGIN</string>
+    <string name="btnCadastrar">CADASTRAR</string>
+    <string name="btnSair">SAIR</string>
+    <string name="hintLogin">LOGIN</string>
+    <string name="hintSenha">SENHA</string>
+    <string name="btnProdutos">PRODUTOS</string>
+    <string name="btnFuncionarios">FUNCIONARIOS</string>
+    <string name="btnFornecedores">FORNECEDORES</string>
+    <string name="btnListarProd">LISTAR PRODUTOS</string>
+    <string name="btnCadastrarProd">CADASTRAR PRODUTOS</string>
+    <string name="hintNomeProduto">Nome do produto</string>
+    <string name="hintValorProduto">Valor do produto</string>
+    <string name="hintQtdProduto">Quantidade do produto</string>
+    <string name="hintNomeFuncionario">NOME DO FUNCIONARIO</string>
+    <string name="hintCargo">CARGO DO FUNCIONARIO</string>
+    <string name="hintEmailFuncionario">EMAIL DO FUNCIONARIO</string>
+    <string name="hintCargoFuncionario">CARGO DO FUNCIONARIO</string>
+    <string name="hintNomeFornecedor">NOME DO FORNECEDOR</string>
+    <string name="hintTelefoneFornecedor">TELEFONE DO FORNECEDOR</string>
+    <string name="hintEmailFornecedor">EMAIL DO FORNECEDOR</string>
+    <string name="btnListarFucionarios">LISTAR FUNCIONARIOS</string>
+    <string name="btnCadastrarFuncionarios">CADASTRAR FUNCIONARIO</string>
+    <string name="btnListarFornecedor">LISTAR FORNECEDOR</string>
+    <string name="btnCadastrarFornecedor">CADASTRAR FORNECEDOR</string>
 </resources>
