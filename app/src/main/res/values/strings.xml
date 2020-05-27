@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AppA5</string>
+    <string name="btnLogin">LOGIN</string>
+    <string name="btnCadastrar">CADASTRAR</string>
+    <string name="btnSair">SAIR</string>
+    <string name="hintLogin">LOGIN</string>
+    <string name="hintSenha">SENHA</string>
 </resources>

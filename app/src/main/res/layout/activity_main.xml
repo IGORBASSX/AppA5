@@ -1,41 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:gravity="center"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <EditText
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Login"
-    android:id="@+id/etLogin"
-    android:layout_marginTop="16dp"
-    android:inputType="text"/>
+        android:id="@+id/etLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hintLogin"
+        android:inputType="text" />
 
     <EditText
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Senha"
-    android:id="@+id/etSenha"/>
+        android:id="@+id/etSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintSenha"
+        android:inputType="textPassword" />
 
     <Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/btnLogin"
-    android:layout_marginTop="10dp"
-    android:onClick="Logar"
-    android:text="Login"/>
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="Logar"
+        android:text="@string/btnLogin" />
 
     <Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/btnLSair"
-    android:layout_marginTop="10dp"
-    android:text="Sair"
-    android:onClick="Sair"/>
+        android:id="@+id/btnCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="Cadastrar"
+        android:text="@string/btnCadastrar" />
+
+    <Button
+        android:id="@+id/btnLSair2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="Sair"
+        android:text="@string/btnSair" />
 
 </LinearLayout>
