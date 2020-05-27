@@ -11,7 +11,7 @@ import android.widget.EditText;
 public class LoginActivity extends AppCompatActivity {
 
     private EditText etLogin, etSenha;
-    private Button btnLogin, btnSair;
+    private Button btnLogin, btnSair, btnCadastrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,26 +20,32 @@ public class LoginActivity extends AppCompatActivity {
 
         etLogin = findViewById(R.id.etLogin);
         etSenha = findViewById(R.id.etSenha);
+
         btnLogin = findViewById(R.id.btnLogin);
-        btnSair = findViewById(R.id.btnLSair);
+        btnSair = findViewById(R.id.btnSair);
+        btnCadastrar = findViewById(R.id.btnCadastrar);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            //Comportamento do botão Login
-        }
-    });
+            @Override
+            public void onClick(View v) {
+                //Comportamento do botão Login
+            }
 
-        btnSair.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            //Comportamento do botão Sair
-            finish();
-        }
-    });
+        });
+        btnCadastrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, CadastroAdmin.class);
+                startActivity(intent);
+            }
+        });
 
-}
-
-
+//        btnSair.setOnClickListener(new View.OnClickListener() {
+//        @Override
+//        public void onClick(View v) {
+////            //Comportamento do botão Sair
+////            finish();
+// }
+    }
 
 }
