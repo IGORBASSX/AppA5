@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dao.CadastroAdmin"
+    tools:context=".ativity.CadastroAdmin"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -29,7 +29,7 @@
         android:text="@string/btnCadastrar" />
 
     <Button
-        android:id="@+id/btnSairCad"
+        android:id="@+id/btnSairCadAdmin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btnSair" />

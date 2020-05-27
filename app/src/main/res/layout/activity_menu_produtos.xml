@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dao.MenuProdutosActivity"
+    tools:context=".ativity.MenuProdutosActivity"
     android:orientation="vertical"
     android:gravity="center">
 
@@ -11,20 +11,20 @@
         android:id="@+id/btnListarProd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btnCadastrarProd"
+        android:text="@string/btnListarProd"
         tools:layout_editor_absoluteX="159dp"
         tools:layout_editor_absoluteY="212dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnCadastrarProduto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btnListarProd"
+        android:text="@string/btnCadastrarProd"
         tools:layout_editor_absoluteX="159dp"
         tools:layout_editor_absoluteY="280dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnSairMenuProd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"

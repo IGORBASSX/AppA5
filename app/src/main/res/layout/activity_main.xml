@@ -37,12 +37,4 @@
         android:onClick="Cadastrar"
         android:text="@string/btnCadastrar" />
 
-    <Button
-        android:id="@+id/btnLSair2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:onClick="Sair"
-        android:text="@string/btnSair" />
-
 </LinearLayout>

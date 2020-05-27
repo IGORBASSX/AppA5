@@ -1,4 +1,4 @@
-package com.example.appa5.dao;
+package com.example.appa5.ativity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,6 +30,7 @@ public class CadastroAdmin extends AppCompatActivity {
         etSenha = findViewById(R.id.etSenhaCad);
 
         Button btnCadastrar = findViewById(R.id.btnCadastrarCad);
+        Button btnSair = findViewById(R.id.btnSairCadAdmin);
 
         auth = FirebaseAuth.getInstance();
 
@@ -37,6 +38,13 @@ public class CadastroAdmin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 cadastrar();
+            }
+        });
+
+        btnSair.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }
@@ -55,4 +63,5 @@ public class CadastroAdmin extends AppCompatActivity {
                     });
         }
     }
+
 }

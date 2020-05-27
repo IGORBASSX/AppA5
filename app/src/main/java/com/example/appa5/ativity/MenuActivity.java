@@ -1,4 +1,4 @@
-package com.example.appa5.dao;
+package com.example.appa5.ativity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,12 +21,19 @@ public class MenuActivity extends AppCompatActivity {
         btnProdutos = findViewById(R.id.btnProdutos);
         btnFuncionarios = findViewById(R.id.btnFuncionarios);
         btnFornecedores = findViewById(R.id.btnFornecedores);
+        btnSair = findViewById(R.id.btnSairMenu);
 
         btnProdutos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent irParaMenuProdutos = new Intent(MenuActivity.this, MenuProdutosActivity.class);
                 startActivity(irParaMenuProdutos);
+            }
+        });
+        btnSair.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
 

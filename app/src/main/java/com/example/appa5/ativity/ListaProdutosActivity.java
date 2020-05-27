@@ -1,4 +1,4 @@
-package com.example.appa5.dao;
+package com.example.appa5.ativity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.appa5.R;
 
-public class MenuProdutosActivity extends AppCompatActivity {
+public class ListaProdutosActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_produtos);
+        setContentView(R.layout.activity_lista_produtos);
     }
 }

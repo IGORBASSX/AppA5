@@ -10,4 +10,7 @@
     <string name="btnFornecedores">FORNECEDORES</string>
     <string name="btnListarProd">LISTAR PRODUTOS</string>
     <string name="btnCadastrarProd">CADASTRAR PRODUTOS</string>
+    <string name="hintNomeProduto">Nome do produto</string>
+    <string name="hintValorProduto">Valor do produto</string>
+    <string name="hintQtdProduto">Quantidade do produto</string>
 </resources>

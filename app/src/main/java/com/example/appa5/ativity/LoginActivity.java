@@ -1,4 +1,4 @@
-package com.example.appa5.dao;
+package com.example.appa5.ativity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,7 +24,6 @@ public class LoginActivity extends AppCompatActivity {
         etSenha = findViewById(R.id.etSenha);
 
         btnLogin = findViewById(R.id.btnLogin);
-        btnSair = findViewById(R.id.btnSair);
         btnCadastrar = findViewById(R.id.btnCadastrar);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -44,12 +43,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-//        btnSair.setOnClickListener(new View.OnClickListener() {
-//        @Override
-//        public void onClick(View v) {
-////            //Comportamento do botão Sair
-////            finish();
-// }
     }
 
 }

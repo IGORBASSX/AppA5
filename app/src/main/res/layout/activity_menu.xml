@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dao.MenuActivity"
+    tools:context=".ativity.MenuActivity"
     android:orientation="vertical"
     android:gravity="center">
 
@@ -38,7 +38,7 @@
         tools:ignore="MissingConstraints"/>
 
     <Button
-        android:id="@+id/btnSair"
+        android:id="@+id/btnSairMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btnSair"
