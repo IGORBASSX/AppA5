@@ -1,8 +1,10 @@
-package com.example.appa5;
+package com.example.appa5.dao;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.appa5.R;
 
 public class ListaProdutosActivity extends AppCompatActivity {
 

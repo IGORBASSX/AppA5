@@ -5,4 +5,7 @@
     <string name="btnSair">SAIR</string>
     <string name="hintLogin">LOGIN</string>
     <string name="hintSenha">SENHA</string>
+    <string name="btnProdutos">PRODUTOS</string>
+    <string name="btnFuncionarios">FUNCIONARIOS</string>
+    <string name="btnFornecedores">FORNECEDORES</string>
 </resources>

@@ -1,6 +1,6 @@
-package com.example.appa5;
+package com.example.appa5.entities;
 
-public class Produtos {
+public class Produto {
 
     //CLasse Produtos com Atributos e Comportamentos
 
@@ -8,7 +8,7 @@ public class Produtos {
     private float valor;
     private int quantidade;
 
-    public Produtos(String nomeProduto, float valor, int quantidade) {
+    public Produto(String nomeProduto, float valor, int quantidade) {
         this.nomeProduto = nomeProduto;
         this.valor = valor;
         this.quantidade = quantidade;

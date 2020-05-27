@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuActivity">
+    tools:context=".dao.MenuActivity">
 
     <Button
         android:id="@+id/btnCadastroProdutos"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cadastro Produtos"
+        android:text="@string/btnProdutos"
         tools:layout_editor_absoluteX="108dp"
         tools:layout_editor_absoluteY="187dp"
         tools:ignore="MissingConstraints"
@@ -18,9 +18,9 @@
 
     <Button
         android:id="@+id/btnFuncionarios"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cadastro Funcionários"
+        android:text="@string/btnFuncionarios"
         tools:layout_editor_absoluteX="108dp"
         tools:layout_editor_absoluteY="247dp"
         android:onClick="acessarCadastroFuncionario"
@@ -28,9 +28,9 @@
 
     <Button
         android:id="@+id/btnCadastroFornecedores"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cadastro Fornecedores"
+        android:text="@string/btnFuncionarios"
         tools:layout_editor_absoluteX="108dp"
         tools:layout_editor_absoluteY="307dp"
         android:onClick="acessarCadastroFornecedor"
@@ -38,9 +38,9 @@
 
     <Button
         android:id="@+id/btnSair"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sair"
+        android:text="@string/btnSair"
         tools:layout_editor_absoluteX="112dp"
         tools:layout_editor_absoluteY="438dp"
         tools:ignore="MissingConstraints"
