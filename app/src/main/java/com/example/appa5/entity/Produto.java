@@ -1,4 +1,6 @@
-package com.example.appa5.entitie;
+package com.example.appa5.entity;
+
+import androidx.annotation.NonNull;
 
 public class Produto {
 
@@ -26,7 +28,7 @@ public class Produto {
         return valor;
     }
 
-    public void setValor(float valor) {
+    public void setValor(double valor) {
         this.valor = valor;
     }
 
@@ -36,5 +38,11 @@ public class Produto {
 
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return "Nome: " + nomeProduto +"   R$"+valor+"     Qtd:"+quantidade;
     }
 }

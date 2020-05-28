@@ -17,6 +17,7 @@ public class MenuProdutosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu_produtos);
 
         Button btnCadastrarProduto = findViewById(R.id.btnCadastrarProduto);
+        Button btnListar = findViewById(R.id.btnListarProd);
         Button btnSair = findViewById(R.id.btnSairMenuProd);
 
         btnCadastrarProduto.setOnClickListener(new View.OnClickListener() {
@@ -26,6 +27,15 @@ public class MenuProdutosActivity extends AppCompatActivity {
                 startActivity(irParaCadastroProduto);
             }
         });
+
+        btnListar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent irParaLista = new Intent(MenuProdutosActivity.this, ListaProdutosActivity.class);
+                startActivity(irParaLista);
+            }
+        });
+
         btnSair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

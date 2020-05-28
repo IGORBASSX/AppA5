@@ -1,6 +1,6 @@
 package com.example.appa5.dao;
 
-import com.example.appa5.entitie.Produto;
+import com.example.appa5.entity.Produto;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
