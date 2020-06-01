@@ -6,7 +6,7 @@ public class Produto {
 
     //CLasse Produtos com Atributos e Comportamentos
 
-    private String nomeProduto;
+    private String nomeProduto, id;
     private double valor;
     private int quantidade;
 
@@ -40,9 +40,17 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     @NonNull
     @Override
     public String toString() {
-        return "Nome: " + nomeProduto +"   R$"+valor+"     Qtd:"+quantidade;
+        return "Nome: " + nomeProduto + "   R$" + valor + "     Qtd:" + quantidade;
     }
 }
