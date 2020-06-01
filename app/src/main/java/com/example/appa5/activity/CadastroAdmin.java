@@ -1,4 +1,4 @@
-package com.example.appa5.ativity;
+package com.example.appa5.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

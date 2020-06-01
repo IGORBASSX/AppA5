@@ -4,20 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ativity.ListaProdutosActivity"
+    tools:context=".activity.ListaProdutosActivity"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
             <include
                 android:id="@+id/includeLvProdutos"
                 layout="@layout/content_lista_produtos"
                 />
 
-
-    </LinearLayout>
 
 
 </LinearLayout>
