@@ -5,10 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="@layout/content_lista_produtos"
     android:orientation="vertical">
-    
+
     <ListView
         android:id="@+id/lvProdutos"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 </LinearLayout>

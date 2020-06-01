@@ -5,11 +5,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.appa5.R;
 import com.example.appa5.entity.Produto;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -40,6 +42,15 @@ public class ListaProdutosActivity extends AppCompatActivity {
         listaProdutos = new ArrayList<>();
         adapter = new ArrayAdapter<>(ListaProdutosActivity.this, android.R.layout.simple_list_item_1, listaProdutos);
         lvProduto.setAdapter(adapter);
+
+        FloatingActionButton fButtonSairProd = findViewById(R.id.fButtonSairProd);
+
+        fButtonSairProd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
     }
     @Override
