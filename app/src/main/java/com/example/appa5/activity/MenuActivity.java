@@ -23,6 +23,14 @@ public class MenuActivity extends AppCompatActivity {
         btnFornecedores = findViewById(R.id.btnFornecedores);
         btnSair = findViewById(R.id.btnSairMenu);
 
+        btnFuncionarios.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent irParaMenuFuncionarios = new Intent(MenuActivity.this, MenuFuncionarioActivity.class);
+                startActivity(irParaMenuFuncionarios);
+            }
+        });
+
         btnProdutos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
