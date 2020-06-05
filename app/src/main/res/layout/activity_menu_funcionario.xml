@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MenuFuncionariosActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btnListarFunc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LISTAR FUNCIONÁRIO"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="212dp" />
+
+    <Button
+        android:id="@+id/btnCadastrarFuncionario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CADASTRAR FUNCIONÁRIO"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <Button
+        android:id="@+id/btnSairMenuFunc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/btnSair"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="430dp" />
+
+</LinearLayout>
