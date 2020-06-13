@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="@layout/content_lista_funcionarios"
-
+    tools:showIn="@layout/activity_lista_funcionario"
     android:orientation="vertical">
 
     <ListView
         android:id="@+id/lvFuncionario"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
 
 </LinearLayout>

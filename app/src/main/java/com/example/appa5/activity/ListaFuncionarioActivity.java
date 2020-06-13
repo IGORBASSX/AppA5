@@ -5,11 +5,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.appa5.R;
 import com.example.appa5.entity.Funcionario;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -34,14 +36,24 @@ public class ListaFuncionarioActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_produtos);
+        setContentView(R.layout.activity_lista_funcionario);
 
-        lvFuncionario = findViewById(R.id.lvProdutos);
+        lvFuncionario = findViewById(R.id.lvFuncionario);
         listaFuncionario = new ArrayList<>();
         adapter = new ArrayAdapter<>(ListaFuncionarioActivity.this, android.R.layout.simple_list_item_1, listaFuncionario);
         lvFuncionario.setAdapter(adapter);
 
+        FloatingActionButton fbSair = findViewById(R.id.fButtonSairFunc);
+
+        fbSair.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
     }
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -88,6 +100,7 @@ public class ListaFuncionarioActivity extends AppCompatActivity {
 
         query.addChildEventListener(childEventListener);
     }
+
     @Override
     protected void onStop() {
         super.onStop();
