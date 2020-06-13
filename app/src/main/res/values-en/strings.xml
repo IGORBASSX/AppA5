@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AppA5</string>
+    <string name="btnLogin">LOGIN</string>
+    <string name="btnCadastrar">REGISTER</string>
+    <string name="btnSair">EXIT</string>
+    <string name="hintLogin">LOGIN</string>
+    <string name="hintSenha">PASSWORD</string>
+    <string name="btnProdutos">PRODUCTS</string>
+    <string name="btnFuncionarios">EMPLOYEE</string>
+    <string name="btnFornecedores">PROVIDER</string>
+    <string name="btnListarProd">Product List</string>
+    <string name="btnCadastrarProd">PRODUCT REGISTER</string>
+    <string name="hintNomeProduto">Product name</string>
+    <string name="hintValorProduto">Product value</string>
+    <string name="hintQtdProduto">Product quantity</string>
+    <string name="hintNomeFornecedor">PROVIDER NAME</string>
+    <string name="hintTelefoneFornecedor">PROVIDER PHONE</string>
+    <string name="hintEmailFornecedor">PROVIDER MAIL</string>
+    <string name="btnListarFucionarios">EMPLOYE LIST</string>
+    <string name="btnCadastrarFuncionarios">REGISTER EMPLOYEE</string>
+    <string name="btnListarFornecedor">EMPLOYEE LIST</string>
+    <string name="btnCadastrarFornecedor">REGISTER PROVIDER</string>
+</resources>
