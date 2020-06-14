@@ -2,15 +2,19 @@ package com.example.appa5.activity;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.appa5.R;
 import com.example.appa5.entity.Funcionario;
+import com.example.appa5.entity.Produto;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -52,6 +56,34 @@ public class ListaFuncionarioActivity extends AppCompatActivity {
             }
         });
 
+        lvFuncionario.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                alertExcluir( position );
+                return true;
+            }
+        });
+
+
+    }
+
+    public void alertExcluir(final int posicao) {
+        final Funcionario funcionarioSelecionado = listaFuncionario.get(posicao);
+
+        AlertDialog.Builder alerta = new AlertDialog.Builder(ListaFuncionarioActivity.this);
+        alerta.setTitle("DELETAR PRODUTO");
+        alerta.setMessage("Certeza que deseja excluir o funcionário " +funcionarioSelecionado.getNomeFuncionario()+"?");
+        alerta.setNeutralButton("Cancelar", null);
+        alerta.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                reference.child("produto").child( funcionarioSelecionado.getCpf()).removeValue();
+
+                listaFuncionario.remove( posicao );
+                adapter.notifyDataSetChanged();
+            }
+        });
+        alerta.show();
     }
 
     @Override

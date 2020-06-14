@@ -38,6 +38,14 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(irParaMenuProdutos);
             }
         });
+
+        btnFornecedores.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent irParaMenuFornecedores = new Intent(MenuActivity.this, MenuFornecedoresActivity.class);
+                startActivity(irParaMenuFornecedores);
+            }
+        });
         btnSair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,7 +61,7 @@ public class MenuActivity extends AppCompatActivity {
 
     }
     public void acessarCadastroFornecedor(View view) {
-        Intent intent = new Intent(this, ListaProdutosActivity.class);
+        Intent intent = new Intent(this, ListaFornecedorActivity.class);
         startActivity(intent);
 
     }
