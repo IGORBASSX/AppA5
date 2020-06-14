@@ -43,7 +43,7 @@ public class ListaFornecedorActivity extends AppCompatActivity {
         adapter = new ArrayAdapter<>(ListaFornecedorActivity.this, android.R.layout.simple_list_item_1, listaFornecedor);
         lvFornecedor.setAdapter(adapter);
 
-        FloatingActionButton fbSair = findViewById(R.id.fButtonSairFunc);
+        FloatingActionButton fbSair = findViewById(R.id.fButtonSairFornecedores);
 
         fbSair.setOnClickListener(new View.OnClickListener() {
             @Override

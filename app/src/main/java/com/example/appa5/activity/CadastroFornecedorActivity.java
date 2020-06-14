@@ -21,7 +21,7 @@ public class CadastroFornecedorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_fornecedor);
 
-        etNomeFornecedor = findViewById(R.id.etNomeFuncionario);
+        etNomeFornecedor = findViewById(R.id.etNomeFornecedor);
         etTelefoneFornecedor = findViewById(R.id.etTelefoneFornecedor);
         etEmailFornecedor = findViewById(R.id.etEmailFornecedor);
 

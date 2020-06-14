@@ -12,7 +12,7 @@
         layout="@layout/content_lista_fornecedor" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fButtonSairFunc"
+        android:id="@+id/fButtonSairFornecedores"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|bottom"
